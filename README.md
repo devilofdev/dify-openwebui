@@ -1,190 +1,235 @@
-![cover-v5-optimized](https://github.com/langgenius/dify/assets/13230914/f9e19af5-61ba-4119-b926-d10c4c06ebab)
+---
+share_link: https://share.note.sx/de8qf4km#LizNfG6jf3B7f41LJgdLUhT/56AMGKC0tQGAebfRIK0
+share_updated: 2025-01-19T01:49:55+09:00
+---
 
-<p align="center">
-  📌 <a href="https://dify.ai/blog/introducing-dify-workflow-file-upload-a-demo-on-ai-podcast">Introducing Dify Workflow File Upload: Recreate Google NotebookLM Podcast</a>
-</p>
+## Docker Desktop 설치
 
-<p align="center">
-  <a href="https://cloud.dify.ai">Dify Cloud</a> ·
-  <a href="https://docs.dify.ai/getting-started/install-self-hosted">Self-hosting</a> ·
-  <a href="https://docs.dify.ai">Documentation</a> ·
-  <a href="https://udify.app/chat/22L1zSxg6yW1cWQg">Enterprise inquiry</a>
-</p>
+링크: https://www.docker.com/get-started/
 
-<p align="center">
-    <a href="https://dify.ai" target="_blank">
-        <img alt="Static Badge" src="https://img.shields.io/badge/Product-F04438"></a>
-    <a href="https://dify.ai/pricing" target="_blank">
-        <img alt="Static Badge" src="https://img.shields.io/badge/free-pricing?logo=free&color=%20%23155EEF&label=pricing&labelColor=%20%23528bff"></a>
-    <a href="https://discord.gg/FngNHpbcY7" target="_blank">
-        <img src="https://img.shields.io/discord/1082486657678311454?logo=discord&labelColor=%20%235462eb&logoColor=%20%23f5f5f5&color=%20%235462eb"
-            alt="chat on Discord"></a>
-    <a href="https://reddit.com/r/difyai" target="_blank">  
-        <img src="https://img.shields.io/reddit/subreddit-subscribers/difyai?style=plastic&logo=reddit&label=r%2Fdifyai&labelColor=white"
-            alt="join Reddit"></a>
-    <a href="https://twitter.com/intent/follow?screen_name=dify_ai" target="_blank">
-        <img src="https://img.shields.io/twitter/follow/dify_ai?logo=X&color=%20%23f5f5f5"
-            alt="follow on X(Twitter)"></a>
-    <a href="https://hub.docker.com/u/langgenius" target="_blank">
-        <img alt="Docker Pulls" src="https://img.shields.io/docker/pulls/langgenius/dify-web?labelColor=%20%23FDB062&color=%20%23f79009"></a>
-    <a href="https://github.com/langgenius/dify/graphs/commit-activity" target="_blank">
-        <img alt="Commits last month" src="https://img.shields.io/github/commit-activity/m/langgenius/dify?labelColor=%20%2332b583&color=%20%2312b76a"></a>
-    <a href="https://github.com/langgenius/dify/" target="_blank">
-        <img alt="Issues closed" src="https://img.shields.io/github/issues-search?query=repo%3Alanggenius%2Fdify%20is%3Aclosed&label=issues%20closed&labelColor=%20%237d89b0&color=%20%235d6b98"></a>
-    <a href="https://github.com/langgenius/dify/discussions/" target="_blank">
-        <img alt="Discussion posts" src="https://img.shields.io/github/discussions/langgenius/dify?labelColor=%20%239b8afb&color=%20%237a5af8"></a>
-</p>
+Download Docker Desktop 을 내려받아 설치합니다.
 
-<p align="center">
-  <a href="./README.md"><img alt="README in English" src="https://img.shields.io/badge/English-d9d9d9"></a>
-  <a href="./README_CN.md"><img alt="简体中文版自述文件" src="https://img.shields.io/badge/简体中文-d9d9d9"></a>
-  <a href="./README_JA.md"><img alt="日本語のREADME" src="https://img.shields.io/badge/日本語-d9d9d9"></a>
-  <a href="./README_ES.md"><img alt="README en Español" src="https://img.shields.io/badge/Español-d9d9d9"></a>
-  <a href="./README_FR.md"><img alt="README en Français" src="https://img.shields.io/badge/Français-d9d9d9"></a>
-  <a href="./README_KL.md"><img alt="README tlhIngan Hol" src="https://img.shields.io/badge/Klingon-d9d9d9"></a>
-  <a href="./README_KR.md"><img alt="README in Korean" src="https://img.shields.io/badge/한국어-d9d9d9"></a>
-  <a href="./README_AR.md"><img alt="README بالعربية" src="https://img.shields.io/badge/العربية-d9d9d9"></a>
-  <a href="./README_TR.md"><img alt="Türkçe README" src="https://img.shields.io/badge/Türkçe-d9d9d9"></a>
-  <a href="./README_VI.md"><img alt="README Tiếng Việt" src="https://img.shields.io/badge/Ti%E1%BA%BFng%20Vi%E1%BB%87t-d9d9d9"></a>
-</p>
+![](assets/Capture-20250119-003315.png)
 
+docker desktop 의 dashboard 를 실행하여 잘 설치되었는지 확인합니다.
 
-Dify is an open-source LLM app development platform. Its intuitive interface combines agentic AI workflow, RAG pipeline, agent capabilities, model management, observability features and more, letting you quickly go from prototype to production. 
+Mac 에서는 상단의 icon 을 클릭 후 go to dashboard 를 클릭하면 됩니다.
 
-## Quick start
-> Before installing Dify, make sure your machine meets the following minimum system requirements:
-> 
->- CPU >= 2 Core
->- RAM >= 4 GiB
+![](assets/Capture-20250119-003506.png)
 
-</br>
+![](assets/Capture-20250119-003418.png)
 
-The easiest way to start the Dify server is through [docker compose](docker/docker-compose.yaml). Before running Dify with the following commands, make sure that [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) are installed on your machine:
+## Ollama 다운로드 및 설치
 
-```bash
-cd dify
-cd docker
-cp .env.example .env
-docker compose up -d
-```
+- 다운로드 링크: https://ollama.com/download
 
-After running, you can access the Dify dashboard in your browser at [http://localhost/install](http://localhost/install) and start the initialization process.
+### 실습에 활용할 임베딩 모델
 
-#### Seeking help
-Please refer to our [FAQ](https://docs.dify.ai/getting-started/install-self-hosted/faqs) if you encounter problems setting up Dify. Reach out to [the community and us](#community--contact) if you are still having issues.
+터미널을 열어주세요
 
-> If you'd like to contribute to Dify or do additional development, refer to our [guide to deploying from source code](https://docs.dify.ai/getting-started/install-self-hosted/local-source-code)
+`ollama list` 명령어를 입력하면 현재 설치된 모델 리스트가 뜹니다.
+(아직 설치한 적이 없다면 아무것도 안뜨는 것이 정상입니다)
 
-## Key features
-**1. Workflow**: 
-  Build and test powerful AI workflows on a visual canvas, leveraging all the following features and beyond.
+![](assets/Capture-20250119-005907.png)
 
+다음의 명령어를 입력하여 `bge-m3` 임베딩 모델을 다운로드 받습니다.
 
-  https://github.com/langgenius/dify/assets/13230914/356df23e-1604-483d-80a6-9517ece318aa
+> 명령어 
 
+`ollama pull bge-m3`
 
+![](assets/Capture-20250119-005942.png)
 
-**2. Comprehensive model support**: 
-  Seamless integration with hundreds of proprietary / open-source LLMs from dozens of inference providers and self-hosted solutions, covering GPT, Mistral, Llama3, and any OpenAI API-compatible models. A full list of supported model providers can be found [here](https://docs.dify.ai/getting-started/readme/model-providers).
+설치 후 `ollama list` 입력시 다음과 같이 `bge-m3:latest` 모델을 확인할 수 있습니다.
 
-![providers-v5](https://github.com/langgenius/dify/assets/13230914/5a17bdbe-097a-4100-8363-40255b70f6e3)
+![](assets/Capture-20250119-010023.png)
+### 실습에 활용할 모델
 
+Llama DNA 1.0 (8B) 모델
+- 링크: https://huggingface.co/QuantFactory/Llama-DNA-1.0-8B-Instruct-GGUF/tree/main
 
-**3. Prompt IDE**: 
-  Intuitive interface for crafting prompts, comparing model performance, and adding additional features such as text-to-speech to a chat-based app. 
+양자화 수준을 보시고 구동이 가능한 모델을 **다운로드** 해주세요
 
-**4. RAG Pipeline**: 
-  Extensive RAG capabilities that cover everything from document ingestion to retrieval, with out-of-box support for text extraction from PDFs, PPTs, and other common document formats.
+다운로드 받은 `.gguf` 확장자를 가지는 모델은 Modelfile 의 동일 경로에 위치해 주세요
 
-**5. Agent capabilities**: 
-  You can define agents based on LLM Function Calling or ReAct, and add pre-built or custom tools for the agent. Dify provides 50+ built-in tools for AI agents, such as Google Search, DALL·E, Stable Diffusion and WolframAlpha.
+![](assets/Capture-20250119-005516.png)
 
-**6. LLMOps**: 
-  Monitor and analyze application logs and performance over time. You could continuously improve prompts, datasets, and models based on production data and annotations.
+터미널을 열고 명령어를 실행하여 Ollama 모델을 생성하세요
 
-**7. Backend-as-a-Service**: 
-  All of Dify's offerings come with corresponding APIs, so you could effortlessly integrate Dify into your own business logic.
+먼저 터미널에서 경로를 이동합니다.
 
+> 경로 이동
 
-## Using Dify
+`cd ollama-modelfiles/llama-dna-1.0-8b-instruct`
 
-- **Cloud </br>**
-We host a [Dify Cloud](https://dify.ai) service for anyone to try with zero setup. It provides all the capabilities of the self-deployed version, and includes 200 free GPT-4 calls in the sandbox plan.
+다음으로는 `Modelfile` 을 열어 본인이 받은 `.gguf` 파일의 이름과 맞는지 확인합니다. (Q8, Q6, etc...)
 
-- **Self-hosting Dify Community Edition</br>**
-Quickly get Dify running in your environment with this [starter guide](#quick-start).
-Use our [documentation](https://docs.dify.ai) for further references and more in-depth instructions.
+![](assets/Capture-20250119-010503.png)
+같은 위치에 파일도 있어야 합니다.
 
-- **Dify for enterprise / organizations</br>**
-We provide additional enterprise-centric features. [Log your questions for us through this chatbot](https://udify.app/chat/22L1zSxg6yW1cWQg) or [send us an email](mailto:business@dify.ai?subject=[GitHub]Business%20License%20Inquiry) to discuss enterprise needs. </br>
-  > For startups and small businesses using AWS, check out [Dify Premium on AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-t22mebxzwjhu6) and deploy it to your own AWS VPC with one-click. It's an affordable AMI offering with the option to create apps with custom logo and branding.
+![](assets/Capture-20250119-010528.png)
+
+다음의 명령어를 입력하여 모델 파일을 생성합니다.
+
+> 모델 생성 명령어
+
+`ollama create llama-dna -f Modelfile`
+
+![](assets/Capture-20250119-011138.png)
+
+생성된 모델을 확인합니다.
+
+`ollama run llama-dna`
+
+> 실행 예시
+
+![](assets/Capture-20250119-011049.png)
+
+구동이 잘 되는지 확인하였으면 `/bye` 를 입력하여 종료합니다.
+
+## Git 다운로드 및 설치
+### MacOS / Linux
+
+Git 설치가 처음이신 분들은 아래 영상 링크를 참고해 주세요.
+
+- 영상: https://youtu.be/mVu6Wj8Z7C0?si=Fh1Eu6j9q9IcXnaE&t=1311
+- brew ~ git 설치까지 진행하시면 됩니다.
+- 설치 메뉴얼: https://teddynote.com/10-RAG%EB%B9%84%EB%B2%95%EB%85%B8%ED%8A%B8/%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95%20(Mac)/
+### Windows
+
+Git 설치가 처음이신 분들은 아래 영상 링크를 참고해 주세요.
+- 영상: https://youtu.be/mVu6Wj8Z7C0?si=Wr-CUNF0D8XY12yM&t=585
+- 설치 메뉴얼: https://teddynote.com/10-RAG%EB%B9%84%EB%B2%95%EB%85%B8%ED%8A%B8/%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95%20(Windows)/
+
+## 프로젝트 파일 다운로드
+
+터미널을 열어 주세요
+- 참고: Windows 유저는 Powershell 로 진행합니다.
+
+`cd 프로젝트 파일을 다운로드 받을 경로`  로 먼저 경로를 이동합니다.
+
+명령어 예시
+
+> 도큐먼트 폴더에 다운로드 받는 경우
+
+`cd ~/Documents`
+
+git 명령어를 실행하여 프로젝트 파일을 다운로드 받습니다.
 
 
-## Staying ahead
 
-Star Dify on GitHub and be instantly notified of new releases.
+## .env 설정
 
-![star-us](https://github.com/langgenius/dify/assets/13230914/b823edc1-6388-4e25-ad45-2f6b187adbb4)
+`.env.teddynote` 파일의 이름을 `.env` 로 변경합니다.
 
+`.env` 파일의 최하단으로 내려 데이터의 저장 경로를 지정합니다.
+자신의 PC 에 새로운 폴더를 만들어 지정하시는 것을 추천 드립니다.
 
-## Advanced Setup
+Mac / Window 별로 경로 지정 방식이 다를 수 있습니다.
+둘 중 하나를 설정하고 안쓰는 경로는 주석(`#`) 처리합니다.
 
-If you need to customize the configuration, please refer to the comments in our [.env.example](docker/.env.example) file and update the corresponding values in your `.env` file. Additionally, you might need to make adjustments to the `docker-compose.yaml` file itself, such as changing image versions, port mappings, or volume mounts, based on your specific deployment environment and requirements. After making any changes, please re-run `docker-compose up -d`. You can find the full list of available environment variables [here](https://docs.dify.ai/getting-started/install-self-hosted/environments).
+> Mac / Linux 예시
 
-If you'd like to configure a highly-available setup, there are community-contributed [Helm Charts](https://helm.sh/) and YAML files which allow Dify to be deployed on Kubernetes.
+![](assets/Capture-20250119-002804.png)
 
-- [Helm Chart by @LeoQuote](https://github.com/douban/charts/tree/master/charts/dify)
-- [Helm Chart by @BorisPolonsky](https://github.com/BorisPolonsky/dify-helm)
-- [YAML file by @Winson-030](https://github.com/Winson-030/dify-kubernetes)
+> Windows 예시
 
-#### Using Terraform for Deployment
+![](assets/Capture-20250119-002916.png)
+## Docker 컨테이너 실행
 
-Deploy Dify to Cloud Platform with a single click using [terraform](https://www.terraform.io/)
+터미널을 열고 다음의 파일 위치로 이동 합니다.
 
-##### Azure Global
-- [Azure Terraform by @nikawang](https://github.com/nikawang/dify-azure-terraform)
+`docker-compose-teddynote.yaml` 
 
-##### Google Cloud
-- [Google Cloud Terraform by @sotazum](https://github.com/DeNA/dify-google-cloud-terraform)
+다음의 명령어를 실행하여 도커 컨테이너를 구동합니다. 
 
-#### Using AWS CDK for Deployment
+> 도커 컨테이너 실행 명령어
 
-Deploy Dify to AWS with [CDK](https://aws.amazon.com/cdk/)
+`docker-compose -f docker-compose-teddynote.yaml up -d`
 
-##### AWS 
-- [AWS CDK by @KevinZhao](https://github.com/aws-samples/solution-for-deploying-dify-on-aws)
+> 실행되는 모습
 
-## Contributing
+![](assets/Capture-20250119-003138.png)
 
-For those who'd like to contribute code, see our [Contribution Guide](https://github.com/langgenius/dify/blob/main/CONTRIBUTING.md). 
-At the same time, please consider supporting Dify by sharing it on social media and at events and conferences.
+만약 실행되고 있는 컨테이너를 중지하는 경우 다음의 명령어를 입력하여 종료 할 수 있습니다.
 
+> 컨테이너 실행 중지 명령어
 
-> We are looking for contributors to help with translating Dify to languages other than Mandarin or English. If you are interested in helping, please see the [i18n README](https://github.com/langgenius/dify/blob/main/web/i18n/README.md) for more information, and leave us a comment in the `global-users` channel of our [Discord Community Server](https://discord.gg/8Tpq4AcN9c).
+`docker stop $(docker ps -q) && docker rm $(docker ps -aq)`
 
-## Community & contact
+혹은 Docker Desktop 에서 "Containers" 메뉴에서 전체 선택 후 "Delete" 로 삭제할 수 있습니다.
 
-* [Github Discussion](https://github.com/langgenius/dify/discussions). Best for: sharing feedback and asking questions.
-* [GitHub Issues](https://github.com/langgenius/dify/issues). Best for: bugs you encounter using Dify.AI, and feature proposals. See our [Contribution Guide](https://github.com/langgenius/dify/blob/main/CONTRIBUTING.md).
-* [Discord](https://discord.gg/FngNHpbcY7). Best for: sharing your applications and hanging out with the community.
-* [X(Twitter)](https://twitter.com/dify_ai). Best for: sharing your applications and hanging out with the community.
+![](assets/Capture-20250119-004252.png)
 
-**Contributors**
+## OpenWebUI 설정
 
-<a href="https://github.com/langgenius/dify/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=langgenius/dify" />
-</a>
+OpenWebUI 로 접속합니다.
 
-## Star history
+주소: http://localhost:3000/
 
-[![Star History Chart](https://api.star-history.com/svg?repos=langgenius/dify&type=Date)](https://star-history.com/#langgenius/dify&Date)
+계정을 새로 만들고 진행합니다.
 
+![](assets/Capture-20250119-011312.png)
 
-## Security disclosure
+상단에 만들어 놓은 `llama-dna:latest` 를 선택한 뒤 채팅을 입력하여 잘 동작하는지 확인합니다.
 
-To protect your privacy, please avoid posting security issues on GitHub. Instead, send your questions to security@dify.ai and we will provide you with a more detailed answer.
+![](assets/Capture-20250119-011357.png)
 
-## License
+> 실행 예시
 
-This repository is available under the [Dify Open Source License](LICENSE), which is essentially Apache 2.0 with a few additional restrictions.
+![](assets/Capture-20250119-011433.png)
 
+왼쪽 하단에 계정 클릭 - 관리자 패널을 선택합니다.
+
+![](assets/Capture-20250119-011455.png)
+
+**설정** - **연결** 을 클릭합니다.
+
+![](assets/Capture-20250119-011537.png)
+
+`OpenAI API` 섹션의 오른쪽 + 버튼을 눌러 다음을 추가 합니다.
+
+![](assets/Capture-20250119-011615.png)
+
+- URL: `http://host.docker.internal:9099`
+- Key: `0p3n-w3bu!`
+
+![](assets/Capture-20250119-011933.png)
+
+이번에는 **설정** - **파이프라인** 에서 제공해 드린 `dify_pipeline_local.py` 파일을 업로드 합니다.
+
+- (참고) 패스트캠퍼스 RAG 비법노트 강의실 - 강의자료 다운로드 후 파일을 확인할 수 있습니다.
+
+![](assets/Capture-20250119-012311.png)
+
+업로드 한 뒤 아래 설정 파일이 잘 뜨는지 확인합니다.
+
+## Dify 접속
+
+링크: http://localhost/apps
+
+접속하여 워크플로우 화면으로 이동합니다.
+
+아직 워크플로우가 비어 있지만. 제공해드린 워크플로우 DSL 파일을 import 하여 테스트 가능합니다.
+
+![](assets/Capture-20250119-012440.png)
+
+왼쪽 메뉴에서 "DSL 파일 가져오기" 메뉴을 클릭합니다.
+
+![](assets/Capture-20250119-012520.png)
+
+제공해드린 테스트용 파일을 import 합니다 (테디노트 챗봇.yml)
+
+잘 가져와지는지 테스트해 볼 수 있습니다.
+
+미리 사용할 상용 모델들의 API 키를 셋팅해 두는 것이 좋습니다.
+
+우측 상단 **계정** - **설정** 에서
+
+![](assets/Capture-20250119-013406.png)
+
+왼쪽 "모델 제공자" 를 클릭하여 "설정" 에 API 키를 설정해 둡니다.
+
+그럼 흐름을 구성할 때 설정된 키로 적용이 가능합니다.
+
+![](assets/Capture-20250119-013331.png)
