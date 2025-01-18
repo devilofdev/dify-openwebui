@@ -1,7 +1,7 @@
----
-share_link: https://share.note.sx/de8qf4km#LizNfG6jf3B7f41LJgdLUhT/56AMGKC0tQGAebfRIK0
-share_updated: 2025-01-19T01:49:55+09:00
----
+# Dify + OpenWebUI 설치 가이드
+
+- 웹 버전 문서 링크: https://share.note.sx/de8qf4km#LizNfG6jf3B7f41LJgdLUhT/56AMGKC0tQGAebfRIK0
+
 
 ## Docker Desktop 설치
 
