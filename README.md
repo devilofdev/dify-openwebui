@@ -202,7 +202,7 @@ OpenWebUI 로 접속합니다.
 
 이번에는 **설정** - **파이프라인** 에서 제공해 드린 `dify_pipeline_local.py` 파일을 업로드 합니다.
 
-- (참고) 패스트캠퍼스 RAG 비법노트 강의실 - 강의자료 다운로드 후 파일을 확인할 수 있습니다.
+- `dify_pipeline_local.py` 파일 다운로드: https://link.teddynote.com/dify_pipeline_local
 
 ![](assets/Capture-20250119-012311.png)
 
