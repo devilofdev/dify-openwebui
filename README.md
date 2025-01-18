@@ -116,7 +116,11 @@ Git 설치가 처음이신 분들은 아래 영상 링크를 참고해 주세요
 
 git 명령어를 실행하여 프로젝트 파일을 다운로드 받습니다.
 
+`git clone https://github.com/teddylee777/dify-openwebui.git`
 
+다음은 Cursor / VS Code 에서 다운로드 받은 프로젝트 파일을 열어주세요.
+
+![](assets/Capture-20250119-020123.png)
 
 ## .env 설정
 
