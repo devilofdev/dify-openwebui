@@ -1018,3 +1018,6 @@ networks:
   shared_bridge_network:
     driver: bridge
 
+volumes:
+  oradata:
+  dify_es01_data:
