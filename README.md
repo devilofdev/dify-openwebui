@@ -43,7 +43,43 @@ Mac 에서는 상단의 icon 을 클릭 후 go to dashboard 를 클릭하면 됩
 설치 후 `ollama list` 입력시 다음과 같이 `bge-m3:latest` 모델을 확인할 수 있습니다.
 
 ![](assets/Capture-20250119-010023.png)
-### 실습에 활용할 모델
+
+## Git 다운로드 및 설치
+### MacOS / Linux
+
+Git 설치가 처음이신 분들은 아래 영상 링크를 참고해 주세요.
+
+- 영상: https://youtu.be/mVu6Wj8Z7C0?si=Fh1Eu6j9q9IcXnaE&t=1311
+- brew ~ git 설치까지 진행하시면 됩니다.
+- 설치 메뉴얼: https://teddynote.com/10-RAG%EB%B9%84%EB%B2%95%EB%85%B8%ED%8A%B8/%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95%20(Mac)/
+### Windows
+
+Git 설치가 처음이신 분들은 아래 영상 링크를 참고해 주세요.
+- 영상: https://youtu.be/mVu6Wj8Z7C0?si=Wr-CUNF0D8XY12yM&t=585
+- 설치 메뉴얼: https://teddynote.com/10-RAG%EB%B9%84%EB%B2%95%EB%85%B8%ED%8A%B8/%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95%20(Windows)/
+
+## 프로젝트 파일 다운로드
+
+터미널을 열어 주세요
+- 참고: Windows 유저는 Powershell 로 진행합니다.
+
+`cd 프로젝트 파일을 다운로드 받을 경로`  로 먼저 경로를 이동합니다.
+
+명령어 예시
+
+> 도큐먼트 폴더에 다운로드 받는 경우
+
+`cd ~/Documents`
+
+git 명령어를 실행하여 프로젝트 파일을 다운로드 받습니다.
+
+`git clone https://github.com/teddylee777/dify-openwebui.git`
+
+다음은 Cursor / VS Code 에서 다운로드 받은 프로젝트 파일을 열어주세요.
+
+![](assets/Capture-20250119-020123.png)
+
+## 실습에 활용할 모델
 
 Llama DNA 1.0 (8B) 모델
 - 링크: https://huggingface.co/QuantFactory/Llama-DNA-1.0-8B-Instruct-GGUF/tree/main
@@ -86,41 +122,6 @@ Llama DNA 1.0 (8B) 모델
 ![](assets/Capture-20250119-011049.png)
 
 구동이 잘 되는지 확인하였으면 `/bye` 를 입력하여 종료합니다.
-
-## Git 다운로드 및 설치
-### MacOS / Linux
-
-Git 설치가 처음이신 분들은 아래 영상 링크를 참고해 주세요.
-
-- 영상: https://youtu.be/mVu6Wj8Z7C0?si=Fh1Eu6j9q9IcXnaE&t=1311
-- brew ~ git 설치까지 진행하시면 됩니다.
-- 설치 메뉴얼: https://teddynote.com/10-RAG%EB%B9%84%EB%B2%95%EB%85%B8%ED%8A%B8/%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95%20(Mac)/
-### Windows
-
-Git 설치가 처음이신 분들은 아래 영상 링크를 참고해 주세요.
-- 영상: https://youtu.be/mVu6Wj8Z7C0?si=Wr-CUNF0D8XY12yM&t=585
-- 설치 메뉴얼: https://teddynote.com/10-RAG%EB%B9%84%EB%B2%95%EB%85%B8%ED%8A%B8/%ED%99%98%EA%B2%BD%20%EC%84%A4%EC%A0%95%20(Windows)/
-
-## 프로젝트 파일 다운로드
-
-터미널을 열어 주세요
-- 참고: Windows 유저는 Powershell 로 진행합니다.
-
-`cd 프로젝트 파일을 다운로드 받을 경로`  로 먼저 경로를 이동합니다.
-
-명령어 예시
-
-> 도큐먼트 폴더에 다운로드 받는 경우
-
-`cd ~/Documents`
-
-git 명령어를 실행하여 프로젝트 파일을 다운로드 받습니다.
-
-`git clone https://github.com/teddylee777/dify-openwebui.git`
-
-다음은 Cursor / VS Code 에서 다운로드 받은 프로젝트 파일을 열어주세요.
-
-![](assets/Capture-20250119-020123.png)
 
 ## .env 설정
 
