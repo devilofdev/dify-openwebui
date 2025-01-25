@@ -154,6 +154,10 @@ Mac / Window 별로 경로 지정 방식이 다를 수 있습니다.
 
 `docker-compose -f docker-compose-teddynote.yaml up -d`
 
+만약 위의 명령어가 오류가 난다면 아래 명령어로 실행해 주세요
+
+`docker compose -f docker-compose-teddynote.yaml up -d`
+
 > 실행되는 모습
 
 ![](assets/Capture-20250119-003138.png)
