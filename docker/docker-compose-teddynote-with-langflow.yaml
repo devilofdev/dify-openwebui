@@ -973,6 +973,39 @@ services:
     networks:
       - shared_bridge_network
 
+  # langflow
+  langflow:
+    image: langflowai/langflow:latest
+    platform: linux/amd64
+    ports:
+      - "7861:7860"
+    volumes:
+      - ${LANGFLOW_LOCAL_DATA:-/app/data}:/app/langflow
+    depends_on:
+      - postgres
+    environment:
+      - LANGFLOW_DATABASE_URL=postgresql://langflow:langflow@postgres:5432/langflow
+      - LANGFLOW_CONFIG_DIR=app/langflow
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    restart: always
+    networks:
+      - shared_bridge_network
+
+  # langflow-postgres
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: langflow
+      POSTGRES_PASSWORD: langflow
+      POSTGRES_DB: langflow
+    expose:
+      - 5432
+    volumes:
+      - ${LANGFLOW_LOCAL_POSTGRES_DATA:-/var/lib/postgresql/data}:/var/lib/postgresql/data
+    networks:
+      - shared_bridge_network
+
 networks:
   ssrf_proxy_network:
     driver: bridge
