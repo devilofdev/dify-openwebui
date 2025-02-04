@@ -261,3 +261,11 @@ Ollama API 연결은 `http://host.docker.internal:11434`를 사용합니다.
 ![모델 API 키 설정](assets/Capture-20250119-013406.png)  
 ![모델 제공자 설정](assets/Capture-20250119-013331.png)
 
+## 14. Ollama 모델 추가 예시
+
+우측 상단 프로필 - 설정 - 왼쪽 탭 "모델 제공자" - Ollama 모델 추가
+
+다음과 같이 설정하여 `dnotitia/dna` 모델을 추가합니다.
+
+![Ollama 모델 추가 예시](assets/Capture-20250204-172412.png)
+
