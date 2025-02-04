@@ -2,6 +2,8 @@
 
 이 문서는 Dify와 OpenWebUI를 Docker 및 Ollama를 활용하여 설치하는 방법을 단계별로 안내합니다. 또한 Git을 이용해 프로젝트 파일을 다운로드하고 환경을 설정하는 방법, 그리고 컨테이너 실행 및 API 연결 설정 등 전체 워크플로우 구성에 관한 내용을 다룹니다.
 
+**UBUNTU 설치 가이드** 는 [여기](README_UBUNTU.md) 문서를 참고해 주세요.
+
 ---
 
 ## 1. Docker Desktop 설치
