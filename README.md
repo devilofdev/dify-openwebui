@@ -52,13 +52,13 @@ Ollama는 머신러닝 모델 실행을 위한 플랫폼입니다.[^2]
    ollama pull dnotitia/dna
    ```
 
-![dnotitia/dna 모델 다운로드](assets/Capture-20250204-162917.png)
-
 2. 모델 실행 상태 확인 (이미 실행 중이면 이 단계를 건너뛰세요):
 
    ```bash
    ollama run dnotitia/dna
    ```
+
+   ![dnotitia/dna 모델 다운로드](assets/Capture-20250204-162917.png)
 
    실행 후 `/bye` 입력하여 종료합니다.
 
