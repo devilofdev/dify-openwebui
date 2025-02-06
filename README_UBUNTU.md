@@ -15,7 +15,30 @@
   - 11434: Ollama API
   - 9099: OpenWebUI Pipeline
 
-> [!info] 설치 전 시스템이 위 요구 조건을 충족하는지 확인하시기 바랍니다.
+
+### `.env` 파일 설정
+
+`.env.teddynote-ubuntu` 파일을 `.env` 파일로 복사합니다.
+
+추가로, 필요한 설정을 `.env` 파일에 추가합니다.
+
+만약 dify 의 포트를 3005 대신 다른 포트(1234)로 변경하고 싶다면, 아래 설정을 추가합니다.
+
+```bash
+# 예시
+EXPOSE_NGINX_PORT=1234
+```
+
+`.env` 파일의 하단에 데이터 저장 경로를 지정합니다.
+
+아래의 경로는 예시이므로 변경하여 저장합니다.
+
+> (경로 예시)
+> - `/Users/teddy/Dev/openwebui-dify/openwebui`  
+> - `/Users/teddy/Dev/openwebui-dify/pipelines`
+
+![Mac / Linux 경로 설정](assets/Capture-20250204-163817.png)  
+![Windows 경로 설정](assets/Capture-20250204-163855.png)
 
 ---
 
